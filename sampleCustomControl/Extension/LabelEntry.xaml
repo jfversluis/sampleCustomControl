@@ -9,4 +9,6 @@
              x:Class="sampleCustomControl.Extension.LabelEntry">
     <Label Text="Hi Write somthing" />
     <control:StandardEntry BackgroundColor="Blue" TextColor="Red" Text="{Binding Source={RelativeSource AncestorType={x:Type local:LabelEntry}}, Path=EntryText,Mode=TwoWay}" />
+    <!-- If you start typing, you can see it goes in the property, because the text shows up below  -->
+    <Label Text="{Binding EntryText}" />
 </StackLayout>
